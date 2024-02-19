@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islam_rrrrrr/home_screen/home.dart';
+import 'package:islam_rrrrrr/splash_screen/splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,8 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false ,
-      initialRoute: HomeScreen.routeName,
+      initialRoute: Splash.routeName,
       routes: {
+        Splash.routeName:(context) => Splash(),
         HomeScreen.routeName:(context) => HomeScreen(),
       },
     );
