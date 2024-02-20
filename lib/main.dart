@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islam_rrrrrr/home_screen/home.dart';
+import 'package:islam_rrrrrr/my_theme.dart';
 import 'package:islam_rrrrrr/splash_screen/splash.dart';
 
 void main() {
@@ -11,12 +12,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false ,
+      debugShowCheckedModeBanner: false,
       initialRoute: Splash.routeName,
       routes: {
-        Splash.routeName:(context) => Splash(),
-        HomeScreen.routeName:(context) => HomeScreen(),
+        Splash.routeName: (context) => Splash(),
+        HomeScreen.routeName: (context) => HomeScreen(),
       },
+      theme: MyTheme.lightMode,
     );
   }
 }
